@@ -1,23 +1,38 @@
-\# AWS Static Website Hosting
+# AWS Static Website Hosting
 
 ## Project Overview
 
-This project demonstrates how to host a secure and highly available static website using Amazon Web Services (AWS).
+This project demonstrates how to deploy and host a static website using **Amazon S3 Static Website Hosting**.
 
-The solution leverages:
+The website is built with HTML and CSS, uploaded to an Amazon S3 bucket, and made publicly accessible using a secure bucket policy.
 
-* Amazon S3
-* Amazon CloudFront
-* Amazon Route53
-* AWS IAM
-
-The website content is stored in Amazon S3 and delivered globally through CloudFront CDN for improved performance and security.
+This project was created as part of my Cloud & DevOps portfolio while preparing for real-world AWS engineering roles.
 
 ---
 
 ## Architecture
 
-User → Route53 → CloudFront → Amazon S3
+![Architecture Diagram](architecture/aws-static-website-hosting-diagram.png)
+
+---
+
+## Project Structure
+
+```text
+aws-static-website-hosting
+│
+├── README.md
+├── architecture
+│   └── aws-static-website-hosting-diagram.png
+├── screenshots
+│   ├── bucket-objects.png
+│   ├── bucket-policy.png
+│   ├── static-website-hosting.png
+│   └── website-live.png
+└── website
+    ├── index.html
+    └── styles.css
+```
 
 ---
 
@@ -27,54 +42,91 @@ User → Route53 → CloudFront → Amazon S3
 
 * Static website hosting
 * Object storage
-* Versioned content storage
+* Website endpoint
+* Public content delivery
 
-### CloudFront
+### AWS IAM
 
-* Global Content Delivery Network (CDN)
-* HTTPS delivery
-* Improved performance
+* Administrative access for deployment
+* AWS Management Console
 
-### Route53
+### S3 Bucket Policy
 
-* DNS management
-* Domain routing
-
-### IAM
-
-* Least privilege access
-* Security best practices
+* Public read access
+* Least privilege permissions
+* Secure object access
 
 ---
 
 ## Deployment Steps
 
-1. Create S3 bucket.
-2. Upload website files.
-3. Enable static website hosting.
-4. Create CloudFront distribution.
-5. Configure Route53 DNS records.
-6. Validate website accessibility.
-7. Secure permissions using IAM.
+1. Create an Amazon S3 bucket.
+2. Upload `index.html` and `styles.css`.
+3. Enable Static Website Hosting.
+4. Configure the bucket policy for public read access.
+5. Verify the website using the S3 website endpoint.
+
+---
+
+## Architecture Workflow
+
+1. User opens the website URL.
+2. Browser sends an HTTP request.
+3. Amazon S3 serves the static website files.
+4. HTML and CSS are delivered to the browser.
+5. The website is displayed to the user.
+
+---
+
+## Screenshots
+
+### S3 Bucket Objects
+
+![Bucket Objects](screenshots/bucket-objects.png)
+
+### Static Website Hosting
+
+![Static Website Hosting](screenshots/static-website-hosting.png)
+
+### Bucket Policy
+
+![Bucket Policy](screenshots/bucket-policy.png)
+
+### Live Website
+
+![Live Website](screenshots/website-live.png)
 
 ---
 
 ## Skills Demonstrated
 
-* AWS Cloud Architecture
+* Amazon S3
 * Static Website Hosting
-* Content Delivery Networks
-* DNS Configuration
-* Cloud Security
-* IAM Best Practices
-* AWS Networking
+* AWS Storage Services
+* Bucket Policies
+* AWS Console
+* Cloud Architecture
+* Web Deployment
+* Basic Cloud Security
+
+---
+
+## Future Improvements
+
+* Configure Amazon CloudFront
+* Add HTTPS using AWS Certificate Manager (ACM)
+* Connect a custom domain with Amazon Route 53
+* Automate deployment using GitHub Actions
+* Deploy infrastructure using Terraform
 
 ---
 
 ## Author
 
-Musaab Mohamedani
+**Musaab Mohamedani**
 
 AWS Certified Solutions Architect – Associate (SAA-C03)
 
 GitHub: https://github.com/Mus7ab
+
+LinkedIn: https://www.linkedin.com/in/musaab-mohamedani-3b2b72337
