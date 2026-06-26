@@ -12,7 +12,7 @@ This project was created as part of my Cloud & DevOps portfolio while preparing 
 
 ## Architecture
 
-![Architecture Diagram](architecture/aws-static-website-hosting-diagram.png)
+![Architecture Diagram](architecture/aws-website-hosting-diagram.png)
 
 ---
 
