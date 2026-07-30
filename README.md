@@ -125,8 +125,7 @@ aws-static-website-hosting
 
 **Musaab Mohamedani**
 
-AWS Certified Solutions Architect – Associate (SAA-C03)
 
 GitHub: https://github.com/Mus7ab
 
-LinkedIn: https://www.linkedin.com/in/musaab-mohamedani-3b2b72337
+LinkedIn: https://www.linkedin.com/in/musaabmohamedani
