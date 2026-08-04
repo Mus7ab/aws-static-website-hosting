@@ -128,4 +128,4 @@ aws-static-website-hosting
 
 GitHub: https://github.com/Mus7ab
 
-LinkedIn: https://www.linkedin.com/in/musaabmohamedani
+LinkedIn: https://www.linkedin.com/in/musaabmohamedan1
